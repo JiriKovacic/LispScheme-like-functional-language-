@@ -1,0 +1,25 @@
+#ifndef MEMORY_TYPE_H_INCLUDED
+#define MEMORY_TYPE_H_INCLUDED
+
+#include <string>
+
+using namespace std;
+
+#define NUMBER_OF_MEM_TYPES 10
+
+enum MemType {
+	MEM_NUMBER,
+	MEM_CONS,
+	MEM_FUNCTOIN,
+	MEM_CLOSOURE,
+	MEM_ENVIRONMENT,
+	MEM_FILE,
+	MEM_TRUE,
+	MEM_FALSE,
+	MEM_NIL,
+	MEM_EMPTY
+};
+
+extern string memType[NUMBER_OF_MEM_TYPES];
+
+#endif // MEMORY_TYPE_H_INCLUDED

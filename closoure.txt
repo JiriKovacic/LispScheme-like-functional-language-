@@ -1,0 +1,10 @@
+(define (a bz fn) (lambda (f) (- bz fn f)))
+(defvar (c (a 55 11)))
+(c 22)
+(c 33)
+(c 44)
+
+(define (d v) (lambda (f g) (+ v f g)))
+(defvar (e (d 100)))
+(e 20 5)
+(e 30 5)

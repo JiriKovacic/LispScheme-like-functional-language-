@@ -1,0 +1,80 @@
+(define (list-length L)
+	(if (= (car L) #nil)
+		0
+		(+ 1 (list-length (cdr L)))
+	)
+)
+
+(define (item-at-pos L pos)
+	(if (< pos 1)
+		#nil
+		(if (= pos 1)
+			(car L)
+			(item-at-pos (cdr L) (- pos 1))
+		)
+	)
+)
+
+(define (append-list-help L1 L2 pos)
+	(if (< pos 1)
+		L2
+		(append-list-help L1 (cons (item-at-pos L1 pos) L2) (- pos 1))	
+	)
+)
+
+(define (append-list L1 L2)
+	(append-list-help L1 L2 (list-length L1))
+)
+
+(define (reverse-list-help L result)
+	(if (= (car L) #nil)
+		result
+		(reverse-list-help (cdr L) (cons (car L) result))
+	)	
+)
+
+(define (reverse-list L)
+	(reverse-list-help L #nil)
+)
+
+(define (listLS-help L pivot result)
+	(if (= (car L) #nil)
+		result
+		(if (< (car L) pivot)
+			(listLS-help (cdr L) pivot (cons (car L) result))
+			(listLS-help (cdr L) pivot result)
+		)
+	)
+)
+
+(define (listLS L pivot)
+	(reverse-list (listLS-help L pivot #nil))
+)
+
+(define (listGEQ-help L pivot result)
+	(if (= (car L) #nil)
+		result
+		(if (>= (car L) pivot)
+			(listGEQ-help (cdr L) pivot (cons (car L) result))
+			(listGEQ-help (cdr L) pivot result)
+		)
+	)
+)
+
+(define (listGEQ L pivot)
+	(reverse-list (listGEQ-help L pivot #nil))
+)
+
+(define (quicksort L)
+	(if (= (car L) #nil)
+		#nil
+		(if (= (cdr L) #nil)
+			(cons (car L) #nil)
+			(append-list (append-list (quicksort (listLS (cdr L) (car L))) (cons (car L) #nil)) (quicksort (listGEQ (cdr L) (car L))))
+		)
+	)
+)
+
+(defvar (a (list 4 5 2 1 8 3 1)))
+
+(quicksort a)

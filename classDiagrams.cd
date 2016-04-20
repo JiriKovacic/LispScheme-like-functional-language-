@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SchemeObject">
+    <Position X="3.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAEACADAAAAAAAAAAAAAAIEAAAAgAAAAAAA=</HashCode>
+      <FileName>ast.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchemeFunction">
+    <Position X="2.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAEACACAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ast.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchemeKeyword">
+    <Position X="7.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEACACAAAABAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchemeConstant">
+    <Position X="0.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIEACACAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ast.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SchemeVariable">
+    <Position X="5.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEACACAAAAAAAAAAAAEAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>ast.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AstBuilder">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>astBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BytecodeGenerator">
+    <Position X="10.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>bytecodeGenerator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnvItem">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAABAggAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>globalEnv.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GlobalEnvTable">
+    <Position X="12.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAEAAAAQAgAAAAAAAAAAAIAAAIAECAAAAEA=</HashCode>
+      <FileName>globalEnv.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Token">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>reader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Reader">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAJAAAAAgAAAAAAAAEAgAAAACAABBAAAAACAAA=</HashCode>
+      <FileName>reader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="instructionsEnum">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAEAAAAAAAEAoMEAAAAACQAAEAAEAAAEARAgQ=</HashCode>
+      <FileName>instructionSet.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="keywordsEnum">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAADCoAIAAACAAgAAAACAAAAACCBAAAQAAAgAACGA=</HashCode>
+      <FileName>keywords.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="tokensEnum">
+    <Position X="15.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAQAABAAAAAAAAEAAAgAAAAAQAAAAAAAgAAQ=</HashCode>
+      <FileName>reader.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

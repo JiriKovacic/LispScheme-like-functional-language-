@@ -1,0 +1,32 @@
+#include "keywords.h"
+
+string keywordsNames[NUMER_OF_KEYWORDS] = {
+    "define",
+	"defvar",
+	"if",
+	"<",
+	"<=",
+	"=",
+	">",
+	">=",
+	"<>",
+	"+",
+	"-",
+	"*",
+	"/",
+	"car",
+	"cdr",
+	"cons",
+	"list",
+	"#t",
+	"#f",
+	"#nil",
+	"and",
+	"or",
+	"begin",
+	"lambda",
+	"file-open",
+	"file-close",
+	"file-load",
+	"file-write"
+};
